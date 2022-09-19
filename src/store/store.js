@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import calendarReducer from './reducers/CalendarSlice'
+import catReducer from './reducers/CatSlice'
 
 export const store = configureStore({
     reducer: {
-      calendar: calendarReducer
+      cat: catReducer
     }
   })

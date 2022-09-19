@@ -4,7 +4,7 @@ import {
   backgroundMain,
 } from "../../styles/variables.styles";
 
-export const CatImage = styled.image`
+export const CatImage = styled.img`
   width: 10rem;
   height: auto;
   color: ${backgroundMain};
