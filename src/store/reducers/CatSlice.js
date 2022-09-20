@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {catImage: '', enabled: true, autoRefrash: false};
+const initialState = {catImage: '', enabled: true, autoRefresh: false};
 
 const catSlice = createSlice(
   {name: 'catData',
@@ -12,12 +12,15 @@ const catSlice = createSlice(
     },
     toggleEnabled(state, action){
       state.enabled = !state.enabled;
+      if (!state.enabled && state.autoRefresh) {
+        state.autoRefresh = false;
+      }
     },
-    toggleAutoRefrash(state, action){
-      state.autoRefrash = !state.autoRefrash;
+    toggleAutoRefresh(state, action){
+      state.autoRefresh = !state.autoRefresh;
     },
   }
   })
 
-export const {loadCat, toggleEnabled, toggleAutoRefrash} = catSlice.actions;
+export const {loadCat, toggleEnabled, toggleAutoRefresh} = catSlice.actions;
 export default catSlice.reducer;

@@ -10,6 +10,7 @@ export const Checkbox = styled.input`
 `;
 
 export const Label = styled.div`
+  font-size: 12px;
   color: ${fontColorMain};
 `;
 

@@ -3,10 +3,10 @@ import { Button as StyledButton } from "./styles.js";
 
 function Button(props) {
 
-  const { type = 'button', onClick, children } = props;
+  const { type = 'button', onClick, children, disabled='' } = props;
 
   return (
-    <StyledButton type={type} onClick={onClick}>{children}</StyledButton>
+    <StyledButton type={type} onClick={onClick} disabled={disabled}>{children}</StyledButton>
   );
 }
 

@@ -20,12 +20,18 @@ export const Button = styled.button`
   color: ${backgroundMain};
 
   padding: 0.8em;
-  &:hover {
+  &:hover, &:focus {
     color: ${backgroundMain};
     background: ${primaryGradientDark};
     outline: none;
+    cursor: pointer;
   }
   &:focus {
     outline: none;
+  }
+  &:disabled{
+    background: ${primaryGradient};
+    opacity: 0.5;
+    cursor: unset;
   }
 `;

@@ -16,3 +16,7 @@ export const GetCatBtnWrapper = styled.div`
 export const CatCardWrapper = styled.div`
   width: 17rem;
 `;
+
+export const CheckboxWrapper = styled.div`
+  margin-bottom: 0.3rem;
+`;
