@@ -1,20 +1,23 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {catImage: ''};
+const initialState = {catImage: '', enabled: true, autoRefrash: false};
 
 const catSlice = createSlice(
   {name: 'catData',
   initialState,
   reducers: {
     loadCat(state, action){
-      console.log('REDUCER')
       const catImageURL = action.payload[0].url;
-      console.log('URL!!!')
-      console.log(catImageURL)
       state.catImage = catImageURL;
+    },
+    toggleEnabled(state, action){
+      state.enabled = !state.enabled;
+    },
+    toggleAutoRefrash(state, action){
+      state.autoRefrash = !state.autoRefrash;
     },
   }
   })
 
-export const {loadCat} = catSlice.actions;
+export const {loadCat, toggleEnabled, toggleAutoRefrash} = catSlice.actions;
 export default catSlice.reducer;

@@ -9,5 +9,10 @@ export const AppWrapper = styled.div`
 `;
 
 export const GetCatBtnWrapper = styled.div`
-  width: 10rem;
+  width: 17rem;
+  margin-bottom: 1rem;
+`;
+
+export const CatCardWrapper = styled.div`
+  width: 17rem;
 `;

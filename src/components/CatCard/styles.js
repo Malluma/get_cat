@@ -5,7 +5,7 @@ import {
 } from "../../styles/variables.styles";
 
 export const CatImage = styled.img`
-  width: 10rem;
+  width: inherit;
   height: auto;
   color: ${backgroundMain};
 `;

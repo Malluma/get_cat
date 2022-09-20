@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import {
   primaryGradient,
+  primaryGradientDark,
   backgroundMain,
 } from "../../styles/variables.styles.js";
 
@@ -17,13 +18,13 @@ export const Button = styled.button`
   text-decoration: none;
   background: ${primaryGradient};
   color: ${backgroundMain};
-  padding: 0.8em;
-  &:hover,
-  &:focus {
-    outline: none;
-    opacity: 0.5;
-  }
 
+  padding: 0.8em;
+  &:hover {
+    color: ${backgroundMain};
+    background: ${primaryGradientDark};
+    outline: none;
+  }
   &:focus {
     outline: none;
   }
