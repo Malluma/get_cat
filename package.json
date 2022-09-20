@@ -1,8 +1,8 @@
 {
-  "name": "calendar-react-uchi-ru",
+  "name": "get_cat",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://malluma.github.io/Calendar-test-task/",
+  "homepage": "https://malluma.github.io/get_cat/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.4",
     "@testing-library/jest-dom": "^5.16.5",

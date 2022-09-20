@@ -18,5 +18,5 @@ export const CatCardWrapper = styled.div`
 `;
 
 export const CheckboxWrapper = styled.div`
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 `;

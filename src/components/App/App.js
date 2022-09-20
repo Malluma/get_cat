@@ -43,7 +43,7 @@ function App() {
 
   useEffect(() => {
     if (autoRefresh) {
-      timerId.current = setInterval(changeCat, 1000);
+      timerId.current = setInterval(changeCat, 5000);
     } else {
       clearInterval(timerId.current);
     }
