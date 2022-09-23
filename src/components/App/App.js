@@ -26,7 +26,7 @@ function App() {
     changeCat();
   }
 
-  function handleEnabledChange() {
+  function handleEnabledChange(e) {
     dispatch(toggleEnabled());
   }
 
@@ -59,6 +59,7 @@ function App() {
     <AppWrapper>
       <CheckboxWrapper>
         <Checkbox
+          className={'enabled'}
           name="Enabled"
           checked={enabled}
           onChange={handleEnabledChange}
@@ -66,6 +67,7 @@ function App() {
       </CheckboxWrapper>
       <CheckboxWrapper>
         <Checkbox
+          className={'autoRefresh'}
           name="Auto-refresh every 5 second"
           checked={autoRefresh}
           onChange={handleAutoRefreshChange}

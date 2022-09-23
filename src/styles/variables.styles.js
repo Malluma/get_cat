@@ -1,6 +1,9 @@
 export const fontColorMain = 'black';
-export const primaryColorDark = '#b3b7ff';
-export const primaryColor = '#9160fc';
+export const colorMainLight= 'rgba(31, 32, 65, 0.25)';
+export const colorMainLighter= 'rgba(31, 32, 65, 0.1)';
+export const primaryColorDark = '#45770c';
+export const primaryColorLight = '#D8e4ca';
+export const primaryColor = '#9de253';
 export const backgroundMain = '#ffffff';
 export const backgroundSecondary = '#f6f6f6';
 export const primaryGradient = `linear-gradient(180deg, ${primaryColor} 0%, #8ba4f9 100%)`;

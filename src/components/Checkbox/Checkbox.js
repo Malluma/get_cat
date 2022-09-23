@@ -1,23 +1,37 @@
-import { Checkbox as StyledCheckbox, Label } from "./styles.js";
+import {
+  Label,
+  CheckboxContainer,
+  HiddenCheckbox,
+  StyledCheckbox,
+  Icon,
+} from "./styles.js";
 
-function Checkbox(props) {
-  const { name, checked, onChange, disabled = "" } = props;
-
+const Checkbox = ({
+  className,
+  name,
+  checked,
+  onChange,
+  disabled,
+  ...props
+}) => {
   return (
-      <Label>
-        <StyledCheckbox
-          type="checkbox"
+    <Label>
+      <CheckboxContainer className={className}>
+        <HiddenCheckbox
           checked={checked}
-          onChange={onChange}
           disabled={disabled}
+          onChange={onChange}
+          {...props} 
         />
-        {name}
-      </Label> 
+        <StyledCheckbox checked={checked}>
+          <Icon viewBox="0 0 24 24">
+            <polyline points="20 6 9 17 4 12" />
+          </Icon>
+        </StyledCheckbox>
+      </CheckboxContainer>
+      {name}
+    </Label>
   );
-
-  
-
-
-}
+};
 
 export default Checkbox;
